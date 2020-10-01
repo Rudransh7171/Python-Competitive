@@ -14,12 +14,14 @@ import sys
 #
 
 def birthdayCakeCandles(candles):
-    m=max(candles)
-    occ=0
-    for i in range(0,len(candles)):
-        if(candles[i]==m):
-            occ+=1
-    return(occ)
+    # Write your code here
+    count=0
+    big=max(candles)
+    for i in range(len(candles)):
+        if(candles[i]==big):
+            count+=1
+    return count
+   
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
